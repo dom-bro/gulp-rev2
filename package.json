@@ -1,6 +1,6 @@
 {
   "name": "gulp-rev-fix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "improve gulp-rev",
   "license": "MIT",
   "repository": {
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "ava": "*",
+    "gulp-rev": "^8.0.0",
     "p-event": "^1.0.0",
     "xo": "*"
   },
