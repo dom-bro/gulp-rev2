@@ -1,6 +1,10 @@
 # gulp-rev2
 
-> 给资源文件添加文件指纹 `a.png` → `a-f7ee61d96b.png`（文件名） 或 `a.png` → `a.png?_v_=f7ee61d96b`（url参数）
+> 给资源文件添加文件指纹
+
+> `a.png` → `a-f7ee61d96b.png`（文件名方式）
+
+> `a.png` → `a.png?_v_=f7ee61d96b`（url参数方式）
 
 ## Install
 ```bash
@@ -46,9 +50,9 @@ gulp.task('build:css', ['build:image'], ()=>{
 #### query
 
 Type: `boolean`<br>
-Default: `true`
+Default: `false`
 
-设置文件指纹的关联方式，`true` 通过url参数关联`a.png` → `a.png?_v_=f7ee61d96b`，`false` 通过文件名关联`a.png` → `a-f7ee61d96b.png`。
+设置文件指纹的关联方式，`true` 通过url参数关联 `a.png` → `a.png?_v_=f7ee61d96b`，`false` 通过文件名关联 `a.png` → `a-f7ee61d96b.png`。
 
 ## Demo
 
