@@ -1,6 +1,6 @@
 # gulp-rev2
 
-> 给资源文件添加文件指纹 `a.png` → `a-f7ee61d96b.png`（文件名） 或 `a.png` → `a.png?\_v_=f7ee61d96b`（url参数）
+> 给资源文件添加文件指纹 `a.png` → `a-f7ee61d96b.png`（文件名） 或 `a.png` → `a.png?_v_=f7ee61d96b`（url参数）
 
 ## Install
 ```bash
@@ -29,3 +29,18 @@ gulp.task('build:css', ['build:image'], ()=>{
         .pipe(gulp.dest('dist'))
 });
 ```
+
+## 设计思路
+**gulp-rev2** 主要借鉴了 **gulp-rev** 和 **gulp-rev-collector** 的设计实现，主要实现思路如下：
+
+1. 根据文件的内容 `file.contents` 生成文件指纹（`hash`值）；
+
+2. 根据前面生成的文件指纹集合成一张`（源文件，构建文件）`映射对照表（并保存在清单文件 rev-manifest.json 中）；
+
+3. 根据前面生成的映射对照表级联更新存在引用的父文件；
+
+## Demo
+
+这里有一个栗子：[**gulp-rev2-demo**](https://github.com/makemoretime/gulp-rev2-demo)
+
+这里有一篇教程：[**给资源文件添加指纹（Gulp版）**](https://www.cnblogs.com/iovec/p/7772567.html)
