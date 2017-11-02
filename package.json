@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/makemoretime/gulp-rev-fix.git"
+    "url": "git+https://github.com/makemoretime/gulp-rev2.git"
   },
   "author": "yunzhao.li <516911028@qq.com>",
   "engines": {
@@ -44,9 +44,9 @@
   },
   "devDependencies": {},
   "bugs": {
-    "url": "https://github.com/makemoretime/gulp-rev-fix/issues"
+    "url": "https://github.com/makemoretime/gulp-rev2/issues"
   },
-  "homepage": "https://github.com/makemoretime/gulp-rev-fix#readme",
+  "homepage": "https://github.com/makemoretime/gulp-rev2#readme",
   "main": "index.js",
   "directories": {
     "test": "test"
