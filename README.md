@@ -39,6 +39,17 @@ gulp.task('build:css', ['build:image'], ()=>{
 
 3. 根据前面生成的映射对照表级联更新存在引用的父文件；
 
+## 配置项
+
+### rev2([opts])
+
+#### query
+
+Type: `boolean`<br>
+Default: `true`
+
+设置文件指纹的关联方式，`true` 通过url参数关联`a.png` → `a.png?_v_=f7ee61d96b`，`false` 通过文件名关联`a.png` → `a-f7ee61d96b.png`。
+
 ## Demo
 
 这里有一个栗子：[**gulp-rev2-demo**](https://github.com/makemoretime/gulp-rev2-demo)
