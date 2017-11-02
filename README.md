@@ -1,9 +1,9 @@
 # gulp-rev2
 
 > 给资源文件添加文件指纹
-
+>
 > `a.png` → `a-f7ee61d96b.png`（文件名方式）
-
+>
 > `a.png` → `a.png?_v_=f7ee61d96b`（url参数方式）
 
 ## Install
